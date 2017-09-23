@@ -1,1 +1,69 @@
-Hello World
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Living Alone Plan</title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body onload="fetchData()">
+		<div class="container">
+			<h1>Monthly Plan</h1>
+			<div class="jumbotron">
+				<form id="inputForm">
+          <div class="form-group">
+						<label for="mName">My Name:</label>
+						<input type="text" class="form-control" id="mName" placeholder="Enter name...">
+					</div>
+					<div class="form-group">
+						<label for="mIncome">My Income:</label>
+						<input type="number" class="form-control" id="mIncome" placeholder="Per month...">
+					</div>
+					<div class="form-group">
+						<label for="mHousing">Housing:</label>
+						<input type="number" class="form-control" id="mHousing" placeholder="30% ($634)...">
+					</div>
+					<div class="form-group">
+						<label for="mUtilities">Utilities and other housing expenditures:</label>
+						<input type="number" class="form-control" id="mUtilities" placeholder="10% ($211)...">
+					</div>
+          <div class="form-group">
+						<label for="mFood">Food (at home and away):</label>
+						<input type="number" class="form-control" id="mFood" placeholder="15% ($317)...">
+					</div>
+          <div class="form-group">
+						<label for="mTransportation">Transportation (including car loan,gas..):</label>
+						<input type="number" class="form-control" id="mTransportation" placeholder="10% ($211)...">
+					</div>
+          <div class="form-group">
+						<label for="mDebt">Debt repayment (student loans and credit cards):</label>
+						<input type="number" class="form-control" id="mDebt" placeholder="10% ($211)...">
+					</div>
+          <div class="form-group">
+						<label for="mSaving">Saving:</label>
+						<input type="number" class="form-control" id="mSaving" placeholder="10% ($211)...">
+					</div>
+          <div class="form-group">
+						<label for="mClothing">Clothing:</label>
+						<input type="number" class="form-control" id="mClothing" placeholder="5% ($106)...">
+					</div>
+          <div class="form-group">
+						<label for="mEntertainment">Entertainment:</label>
+						<input type="number" class="form-control" id="mEntertainment" placeholder="5% ($106)...">
+					</div>
+          <div class="form-group">
+						<label for="mCarInsurance">Car insurance and miscellaneous personal expenses:</label>
+						<input type="number" class="form-control" id="mCarInsurance" placeholder="5% ($106)...">
+					</div>
+					<button type="submit" class="btn btn-primary">Add</button>
+				</form>
+			</div>
+			<div>
+				<div id="showResult"></div>
+			</div>
+		</div>
+		<script src="http://chancejs.com/chance.min.js"></script>
+		<script type="text/javascript" src="main.js" ></script>
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</body>
+</html>
